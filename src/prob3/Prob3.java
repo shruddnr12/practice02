@@ -1,7 +1,7 @@
 package prob3;
 
 public class Prob3 {
-	public static void main(String args[]) {
+	public static void main(String args[]) {  //왜 main이 static인가???? 알아오기.
 		char c[] = { 'T', 'h', 'i', 's', ' ', 'i', 's', ' ', 'a', ' ', 'p', 'e', 'n', 'c', 'i', 'l', '.' };
 
 		// 원래 배열 원소 출력
@@ -15,10 +15,17 @@ public class Prob3 {
 	}
 
 	public static void replaceSpace(char c[]) {
-
+		
+		for(int i = 0 ; i< c.length; i ++)
+		{
+			if(c[i] == ' ')
+			{
+				c[i] = ',';
+			}	
+		}
 	}
 
 	public static void printCharArray(char c[]) {
-
+		System.out.println(c);
 	}
 }
